@@ -12,14 +12,14 @@ const app = Vue.createApp({
       if (value === '') {
         this.fullname = '';
       } else {
-        this.fullname = value + ' ' + 'Abdul Khader'
+        this.fullname = value + ' ' + this.lastName;
       }
     },
     lastName(value) {
       if (value === '') {
         this.fullname = '';
       } else {
-        this.fullname = value + ' ' + 'Abdul Khader'
+        this.fullname = this.name + ' ' + value;
       }
     }
   },
